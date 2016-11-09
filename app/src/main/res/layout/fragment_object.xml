@@ -1,0 +1,89 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.ObjectFragment">
+
+    <ImageView
+        android:id="@+id/ivPhoto"
+        android:layout_marginTop="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="350px" />
+
+    <TextView
+        android:id="@+id/tvName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ivPhoto"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="11dp"
+        android:text="Name"
+        android:textAppearance="@android:style/TextAppearance.Material.Display2" />
+
+    <TextView
+        android:id="@+id/tvDistance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvName"
+        android:layout_centerHorizontal="true"
+        android:text="Distancia"
+        android:textAppearance="@android:style/TextAppearance.Material.Small" />
+
+    <TextView
+        android:id="@+id/tvAuthor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvDistance"
+        android:layout_centerHorizontal="true"
+        android:text="Autor"
+        android:textAppearance="@android:style/TextAppearance.Material.Medium" />
+
+    <TextView
+        android:id="@+id/tvDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="170px"
+        android:layout_below="@+id/tvAuthor"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed in massa ut massa dapibus gravida. Phasellus sem turpis, porta sit amet sollicitudin ullamcorper, feugiat quis justo. Quisque non auctor sapien, in efficitur massa. Aliquam vehicula sed neque id aliquet. Donec dapibus justo vel tortor faucibus, quis scelerisque quam gravida. Nulla nec neque purus. Integer in libero quis orci luctus fringilla quis a tellus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nulla varius purus a nisl congue ullamcorper. Aenean facilisis vestibulum velit sit amet faucibus. In hac habitasse platea dictumst. Suspendisse at dui id erat pulvinar efficitur. In hendrerit nec urna at auctor. Suspendisse posuere dapibus ultrices. Proin vel venenatis purus."
+        android:textAppearance="@android:style/TextAppearance.Material.Small" />
+
+    <ImageView
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        app:srcCompat="@android:color/darker_gray"
+        android:layout_below="@+id/tvDescription"
+        android:layout_alignStart="@+id/tvDescription"
+        android:layout_marginStart="29dp"
+        android:layout_marginTop="34dp"
+        android:id="@+id/ivPhotoNext" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvNext"
+        android:id="@+id/tvNameNext"
+        android:textAppearance="@android:style/TextAppearance.Material.Medium"
+        android:layout_alignStart="@+id/tvNext" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvNext"
+        android:textAppearance="@android:style/TextAppearance.Material.Small"
+        android:text="Obra Cercana:"
+        android:layout_alignTop="@+id/ivPhotoNext"
+        android:layout_marginLeft="36dp"
+        android:layout_toEndOf="@+id/ivPhotoNext" />
+
+    <TextView
+        android:text="m"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvNameNext"
+        android:layout_alignStart="@+id/tvNameNext"
+        android:id="@+id/tvDistanceNext" />
+
+</RelativeLayout>
